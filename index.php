@@ -28,7 +28,9 @@ include_once "conexao.php";
     $up_usuario->bindParam(':id', $id, PDO::PARAM_INT);
 
     if($up_usuario->execute()){
-        echo "Usuário editado com sucesso!";
+        echo '<div class="alert alert-success" role="alert">
+          Usuário editado com Sucesso!!!
+        </div>';
     }else{
         echo "Erro: Usuário não editado com sucesso!";
     }
